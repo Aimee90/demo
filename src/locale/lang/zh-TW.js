@@ -1,0 +1,20 @@
+export default {
+  home: '首頁',
+  login: '登錄',
+  user: '用戶管理',
+  user_label: '用戶標簽',
+  user_info: '用戶信息',
+  member: '會員服務',
+  coupon_management: '券管理',
+  package_setting: '券包配置',
+  rule_setting: '發放規則配置',
+  send_rule: '自動發券配置',
+  special_list: '特殊名單設置',
+  reward_setting: '奖励設置',
+  used_record: '使用記錄',
+  grant_record: '發放記錄',
+  system_manage: '系統管理',
+  usr_manage: '用戶管理',
+  role_manage: '角色管理',
+  menu_manage: '菜單管理'
+}

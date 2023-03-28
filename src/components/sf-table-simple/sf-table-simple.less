@@ -1,0 +1,157 @@
+.sf-tab-simple{
+  position: relative;
+  /deep/ .ivu-row{
+    margin-bottom: 10px;
+    display:flex !important;
+    justify-content: flex-start !important;
+    align-items: center;
+    flex-wrap: wrap;
+    .ivu-col{
+      padding-right: 6px;
+      &[label]{
+        display: flex;
+        align-items: center;
+        &::before{
+          content: attr(label);
+          white-space: nowrap;
+        }
+      }
+    }
+    .query{
+      margin-right: auto;
+      margin-left: 10px;
+      button{
+        margin-right: 6px;
+      }
+    }
+  }
+  /deep/ .tip{
+    position: relative;
+    margin-top: 8px;
+    padding-left: 10px;
+    color: #2d8cf0;
+    &::before{
+      content: '*';
+      position: absolute;
+      font-size: 1.4em;
+      color: red;
+      padding-right: 4px;
+      top: 0;
+      left: 0;
+    }
+  }
+  /deep/ .sf-action{
+    margin: 5px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    &>*{
+      margin: 0 10px;
+      &:first-child{
+        margin-left: 0;
+      }
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+    .rt{
+      margin-left: auto;
+    }
+    .ct{
+      margin: auto;
+    }
+    .md-btn{
+      width: 90px;
+    }
+    .lg-btn{
+      width: 150px;
+    }
+  }
+  /deep/ .ivu-table-wrapper{
+    overflow: visible;
+    // min-height: calc(~"100% - 40px"); ;
+    .ivu-table-header{
+      overflow: visible;
+      th{
+        text-align: center;
+      }
+    }
+    .ivu-table-body{
+      display: inline-block;
+    }
+    .ivu-table-cell{
+      text-align: center;
+      &>div{
+        display: flex;
+        justify-content: space-around;
+        button{
+          margin: 2px;
+        }
+      }
+    }
+    .ivu-table{
+      overflow-x: auto;
+      min-height: inherit;
+      .ivu-table-tip{
+        overflow: visible;
+        padding-top: 20px;
+        * {
+          overflow: visible;
+          border: none;
+        }
+      }
+    }
+  } 
+  &.action-outside{
+    /deep/ .ivu-table-wrapper{
+      border-top: 0;
+      border-left: 0;
+    }
+    /deep/ .ivu-table{
+      border-left: 1px solid #dcdee2;
+      &::before{
+        width: calc(100%-100);
+      }
+      &::after{
+        background-color: #f4f7f9;
+      }
+      .ivu-table-header{
+        th{
+          border-top: 1px solid #dcdee2;
+        }
+      }
+      tr{
+        &>th, &>td{
+          &:last-child{
+            border: none;
+            background-color: #f4f7f9;
+          }
+        }
+      }
+    }
+  }
+}
+
+.pager {
+  width: 100%;
+  height: 35px;
+  flex: 0 0 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  background: #FFFFFF;
+  .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /deep/ .ivu-page-next,
+    /deep/ .ivu-page-prev {
+      background: #F2F2F2;
+    }
+  }
+  .right {
+    font-size: 12px;
+    color: #282828;
+  }
+} 

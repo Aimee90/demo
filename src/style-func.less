@@ -1,0 +1,38 @@
+.gradient(@start: #fff, @end: #000){
+  background: -moz-linear-gradient(top, @start 0%, @end 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@start), color-stop(100%,@end));
+  background: -webkit-linear-gradient(top, @start 0%,@end 100%);
+  background: -o-linear-gradient(top, @start 0%, @end 100%);
+  background: -ms-linear-gradient(top, @start 0%,@end 100%);
+  background: linear-gradient(to bottom, @start 0%,@end 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@start, endColorstr=@end,GradientType=0 );
+}
+.gradient-linear-customize(@property, @linear){
+  @{property}: -moz-linear-gradient(@linear);
+  @{property}: -webkit-linear-gradient(@linear);
+  @{property}: -o-linear-gradient(@linear);
+  @{property}: -ms-linear-gradient(@linear);
+  @{property}: linear-gradient(@linear);
+}
+.transform-customize(@value, @origin: center){
+  transform: @value;
+  -moz-transform: @value;
+  -o-transform: @value;
+  -ms-transform: @value;
+  -webkit-transform: @value;
+  transform-origin: @origin;
+  -moz-transform-origin: @origin;
+  -o-transform-origin: @origin;
+  -ms-transform-origin: @origin;
+  -webkit-transform-origin: @origin; 
+}
+
+.filter-customize(@filter){
+  filter: @filter;
+  -webkit-filter: @filter;
+}
+@keyframes ani-demo-spin {
+  from { transform: rotate(0deg);}
+  50%  { transform: rotate(180deg);}
+  to   { transform: rotate(360deg);}
+}

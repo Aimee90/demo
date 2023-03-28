@@ -1,0 +1,25 @@
+.vertical-center-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .ivu-modal {
+    margin: inherit;
+    top: 0;
+  }
+}
+
+.ivu-modal-content{
+  font-size: 14px;
+  .ivu-modal-body{
+    max-height: calc(~"100vh - 60px"); 
+  }
+}
+.ivu-modal-close .ivu-icon-ios-close{
+  top: 0px !important;
+  font-size: 1.8em !important;
+}
+@supports (-ms-ime-align:auto) {
+  .ivu-modal-mask, .ivu-modal-wrap{
+    position: absolute !important;
+  }
+}

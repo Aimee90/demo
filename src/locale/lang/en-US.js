@@ -1,0 +1,20 @@
+export default {
+  home: 'Home',
+  login: 'Login',
+  user: 'User management',
+  user_label: 'User label',
+  user_info: 'User info',
+  member: 'member service',
+  coupon_management: 'coupon management',
+  package_setting: 'coupon package setting',
+  rule_setting: 'coupon rule setting',
+  send_rule: 'automatic issuance rules',
+  special_list: 'special list settings',
+  reward_setting: 'reward settings',
+  used_record: 'coupon used record',
+  grant_record: 'coupon grant record',
+  system_manage: 'system management',
+  usr_manage: 'user management',
+  role_manage: 'role management',
+  menu_manage: 'menu management'
+}

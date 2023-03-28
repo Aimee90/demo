@@ -1,0 +1,51 @@
+@border: 1px solid rgb(242, 242, 242);
+.order__info-block{
+  background-color: #FFF;
+  border: @border;
+  /deep/ .ivu-row{
+    .ivu-col{
+      &>div{
+        line-height: 40px;
+        display: flex;
+        align-items: stretch;
+        border-bottom: @border;
+        margin: -1px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; 
+        &::before{
+          flex-shrink: 0;
+          width: 100px;
+          padding-right: 10px;
+          margin-right: 10px;
+          text-align: right;
+          content: attr(label-title);
+          white-space: nowrap;
+          border-left: @border;
+          border-right: @border;
+          background-color: rgba(242, 242, 242, .5);
+        }
+        &>*{
+          text-align: center;
+          display: flex;
+          flex-direction: column-reverse;
+          &::before{
+            content: attr(label-title);
+            line-height: 30px;
+          }
+        }
+        img{
+          margin: 10px 10px 0 10px;
+          width: 140px;
+          height: 90px;
+          
+        }
+      }
+    }
+  }
+}
+/deep/ .ivu-modal{
+  .ivu-modal-body{
+    padding-top: 48px;
+  }
+}

@@ -1,0 +1,16 @@
+.sf-info-block{
+  position: relative;
+  width: 100%;
+  border: 1px dashed #e4e4e4;
+  padding: 20px;
+  margin-bottom: 32px;
+  &::before{
+    content: attr(title);
+    position: absolute;
+    top: -10px;
+    background-color: #FFF;
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 1.12em;
+  }
+}
